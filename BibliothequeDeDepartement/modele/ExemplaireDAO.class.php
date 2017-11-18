@@ -64,7 +64,7 @@ class ExemplaireDAO
 		    return $exemplaire;
 		}		
             
-        } 
+    }
          public function update($x) {
              $cnx = Database::getInstance();
 		
