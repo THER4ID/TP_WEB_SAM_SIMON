@@ -31,6 +31,7 @@
                 //$isbnLivre=$_REQUEST["numLivre"];
                     $dao = new ExemplaireDAO();
                 $Exemplaires = $dao->find($_REQUEST["numLivre"]);
+               
                 ?>
                 <table class='table' id='listeExemplaire'>
                     <thead>
@@ -66,10 +67,14 @@
                             if (($_SESSION["typeUser"] == 'Bibliothèque') or ( $_SESSION["typeUser"] == 'Département Informatique')) {
                                $Detenteur = "";
                                 ?> 
-                               
+                               	
                                 <td><?php echo $Detenteur ?></td>
-                                <td><a href="?action=supprimer&codeExpSup=<?php echo $e->getCode_exp() ?>&detenteur=<?php echo $e->getEmail_det() ?>&proprietaire=<?php echo $e->getProprietaire() ?>&emailproprietaire=<?php echo $e->getEmail_Proprietaire() ?>">Supprimer</a></td>    
+
+
+                                <?php if($_SESSION["connect"] == $e->getEmail_Proprietaire() ){ ?>
+                                	<td><a href="?action=supprimer&codeExpSup=<?php echo $e->getCode_exp() ?>&detenteur=<?php echo $e->getEmail_det() ?>&proprietaire=<?php echo $e->getProprietaire() ?>&emailproprietaire=<?php echo $e->getEmail_Proprietaire() ?>">Supprimer</a></td>    
             <?php
+        	}
         } else {
             $email_Dest = $e->getEmail_det();
             ?>
@@ -85,9 +90,15 @@
                                     <td><a href="?action=changerDet&numR=<?php echo $e->getCode_exp() ?>">Changer de detenteur</a></td>
                                     <?php
                                 }
+
+
                                 ?> 
-                                <td><a href="?action=supprimer&codeExpSup=<?php echo $e->getCode_exp() ?>&detenteur=<?php echo $e->getEmail_det() ?>&proprietaire=<?php echo $e->getEmail_det() ?>&emailproprietaire=<?php echo $e->getEmail_Proprietaire() ?>">Supprimer</a></td>    
-                                <!--echo $e->getEmail_det() ?>-->
+                                
+                                
+                                <?php if($_SESSION["connect"] == $e->getEmail_Proprietaire() ){ ?>
+	                                <td><a href="?action=supprimer&codeExpSup=<?php echo $e->getCode_exp() ?>&detenteur=<?php echo $e->getEmail_det() ?>&proprietaire=<?php echo $e->getEmail_det() ?>&emailproprietaire=<?php echo $e->getEmail_Proprietaire() ?>">Supprimer</a></td>    
+	                                <!--echo $e->getEmail_det() ?>-->
+	                            <?php } ?>
                                 </tr>     
                                 <?php
                             }
