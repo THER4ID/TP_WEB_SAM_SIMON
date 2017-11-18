@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/nadou/Documents/UwampNadia/UwAmp/www/ProjetNadia/NadiaBibliothequeV1/modele/LivreDAO.class.php</file>
+            <file>file:/C:/Users/nadou/Documents/UwampNadia/UwAmp/www/ProjetNadia/NadiaBibliothequeV1/vues/footer.php</file>
+            <file>file:/C:/Users/nadou/Documents/UwampNadia/UwAmp/www/ProjetNadia/NadiaBibliothequeV1/controleur/AfficherAction.class.php</file>
+            <file>file:/C:/Users/nadou/Documents/UwampNadia/UwAmp/www/ProjetNadia/NadiaBibliothequeV1/vues/banner.php</file>
+            <file>file:/C:/Users/nadou/Documents/UwampNadia/UwAmp/www/ProjetNadia/NadiaBibliothequeV1/controleur/ModifierAction.class.php</file>
+            <file>file:/C:/Users/nadou/Documents/UwampNadia/UwAmp/www/ProjetNadia/NadiaBibliothequeV1/controleur/SupprimerLivreAction.class.php</file>
+            <file>file:/C:/Users/nadou/Documents/UwampNadia/UwAmp/www/ProjetNadia/NadiaBibliothequeV1/controleur/AjoutExemplaireAction.class.php</file>
+            <file>file:/C:/Users/nadou/Documents/UwampNadia/UwAmp/www/ProjetNadia/NadiaBibliothequeV1/controleur/EmprunterAction.class.php</file>
+            <file>file:/C:/Users/nadou/Documents/UwampNadia/UwAmp/www/ProjetNadia/NadiaBibliothequeV1/controleur/RequirePRGAction.interface.php</file>
+            <file>file:/C:/Users/nadou/Documents/UwampNadia/UwAmp/www/ProjetNadia/NadiaBibliothequeV1/modele/ExemplaireDAO.class.php</file>
+            <file>file:/C:/Users/nadou/Documents/UwampNadia/UwAmp/www/ProjetNadia/NadiaBibliothequeV1/controleur/ActionBuilder.class.php</file>
+            <file>file:/C:/Users/nadou/Documents/UwampNadia/UwAmp/www/ProjetNadia/NadiaBibliothequeV1/modele/EvaluationDAO.class.php</file>
+            <file>file:/C:/Users/nadou/Documents/UwampNadia/UwAmp/www/ProjetNadia/NadiaBibliothequeV1/controleur/EnvoyerAction.class.php</file>
+            <file>file:/C:/Users/nadou/Documents/UwampNadia/UwAmp/www/ProjetNadia/NadiaBibliothequeV1/vues/inscription.php</file>
+            <file>file:/C:/Users/nadou/Documents/UwampNadia/UwAmp/www/ProjetNadia/NadiaBibliothequeV1/vues/afficher.php</file>
+            <file>file:/C:/Users/nadou/Documents/UwampNadia/UwAmp/www/ProjetNadia/NadiaBibliothequeV1/controleur/LogoutAction.class.php</file>
+            <file>file:/C:/Users/nadou/Documents/UwampNadia/UwAmp/www/ProjetNadia/NadiaBibliothequeV1/modele/classes/Exemplaire.class.php</file>
+            <file>file:/C:/Users/nadou/Documents/UwampNadia/UwAmp/www/ProjetNadia/NadiaBibliothequeV1/vues/ajouter.php</file>
+            <file>file:/C:/Users/nadou/Documents/UwampNadia/UwAmp/www/ProjetNadia/NadiaBibliothequeV1/vues/afficheExp.php</file>
+            <file>file:/C:/Users/nadou/Documents/UwampNadia/UwAmp/www/ProjetNadia/NadiaBibliothequeV1/controleur/ListeExpAction.class.php</file>
+            <file>file:/C:/Users/nadou/Documents/UwampNadia/UwAmp/www/ProjetNadia/NadiaBibliothequeV1/vues/rechercher.php</file>
+            <file>file:/C:/Users/nadou/Documents/UwampNadia/UwAmp/www/ProjetNadia/NadiaBibliothequeV1/modele/CoursDAO.class.php</file>
+            <file>file:/C:/Users/nadou/Documents/UwampNadia/UwAmp/www/ProjetNadia/NadiaBibliothequeV1/controleur/ChangerDetenteurAction.class.php</file>
+            <file>file:/C:/Users/nadou/Documents/UwampNadia/UwAmp/www/ProjetNadia/NadiaBibliothequeV1/vues/menu.php</file>
+            <file>file:/C:/Users/nadou/Documents/UwampNadia/UwAmp/www/ProjetNadia/NadiaBibliothequeV1/controleur/InscriptionAction.class.php</file>
+            <file>file:/C:/Users/nadou/Documents/UwampNadia/UwAmp/www/ProjetNadia/NadiaBibliothequeV1/controleur/RechercheAction.class.php</file>
+            <file>file:/C:/Users/nadou/Documents/UwampNadia/UwAmp/www/ProjetNadia/NadiaBibliothequeV1/controleur/AjouterAction.class.php</file>
+            <file>file:/C:/Users/nadou/Documents/UwampNadia/UwAmp/www/ProjetNadia/NadiaBibliothequeV1/controleur/LoginAction.class.php</file>
+            <file>file:/C:/Users/nadou/Documents/UwampNadia/UwAmp/www/ProjetNadia/NadiaBibliothequeV1/controleur/afficherLivreAction.class.php</file>
+            <file>file:/C:/Users/nadou/Documents/UwampNadia/UwAmp/www/ProjetNadia/NadiaBibliothequeV1/vues/afficherLivre.php</file>
+            <file>file:/C:/Users/nadou/Documents/UwampNadia/UwAmp/www/ProjetNadia/NadiaBibliothequeV1/controleur/EvaluerAction.class.php</file>
+            <file>file:/C:/Users/nadou/Documents/UwampNadia/UwAmp/www/ProjetNadia/NadiaBibliothequeV1/modele/classes/Livre.class.php</file>
+            <file>file:/C:/Users/nadou/Documents/UwampNadia/UwAmp/www/ProjetNadia/NadiaBibliothequeV1/controleur/FormulaireEmailAction.class.php</file>
+        </group>
+    </open-files>
+</project-private>
