@@ -1,4 +1,4 @@
-# Travail Pratique 1: Apporter des améliorations fonctionnelles à une application.
+# Travail Pratique 1: <br>Apporter des améliorations fonctionnelles à une application.
 ## 420-AW6-RO. Développement de projets informatiques avec A. Toudeft
 ### Noms : Samuel Therrien, Simon Nguyen
 #### Contenu :
@@ -30,4 +30,4 @@ Vous êtes recrutés pour apporter à l’application de gestion d’une bibliot
 
 Vous devez remettre la nouvelle version de l’application (code et base de données) ainsi qu’une documentation complète et détaillée des modifications apportées.
 ## Spécifications :
-[Voir les issues](https://github.com/THER4ID/TP_WEB_SAM_SIMON/issues?q=)
+[Voir les issues](https://github.com/THER4ID/TP_WEB_SAM_SIMON/issues?q=is%3Aissue)
