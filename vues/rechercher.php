@@ -20,7 +20,7 @@ and open the template in the editor.
                 <?php
                 include("menu.php");
                 ?>
-            </div> 
+            </div>
 
             <section class="col-md-9 col-sm-9">
                 <div >
@@ -30,15 +30,15 @@ and open the template in the editor.
                     }
 
                     if (ISSET($_REQUEST["messages"]["succés"])) {
-                        //a revoir changer le style          
+                        //a revoir changer le style
                         echo "<span class=\"warningMessage\">" . $_REQUEST["messages"]["succés"] . "</span>";
                     }
                     if (ISSET($_REQUEST["messages"]["suppressionInterdit"])) {
-                        //a revoir changer le style          
+                        //a revoir changer le style
                         echo "<span class=\"warningMessage\">" . $_REQUEST["messages"]["suppressionInterdit"] . "</span>";
                     }
                     if (ISSET($_REQUEST["messages"]["suppression"])) {
-                        //a revoir changer le style          
+                        //a revoir changer le style
                         echo "<span class=\"warningMessage\">" . $_REQUEST["messages"]["suppression"] . "</span>";
                     }
                     ?>
@@ -75,7 +75,7 @@ $db = Database::getInstance();
 
 
 if (ISSET($_REQUEST["motCle"])) {
-    
+
     $dao = new LivreDAO();
     $livres = $dao->findMot($_REQUEST["motCle"]);
     ?>
@@ -103,8 +103,18 @@ if (ISSET($_REQUEST["motCle"])) {
                                     <td><a href="?action=evaluer&codeLivre=<?php echo $l->getIsbn(); ?>">★Evaluer</a></td>
                                     <td><a href='?action=modifier&numAModifier=<?php echo $l->getIsbn(); ?>' class="pull-right hidden-xs showopacity glyphicon glyphicon-edit">Modifier</a></td>
                                     <td><a href='?action=ajouterExp&numAjouter=<?php echo $l->getIsbn(); ?>'><span class="glyphicon glyphicon-plus-sign"></span>un exemplaire</a></td>
-                                    <td><a href='?action=afficheExp&numLivre=<?php echo $l->getIsbn(); ?>'>Liste des exemplaires</a></td>
-                                </tr>  
+                                    <td><a href='?action=afficheExp&numLivre=<?php echo $l->getIsbn(); ?>'>
+                                            <?php $dao = new ExemplaireDAO();
+                                            $compte = $dao->find($l->getIsbn())->size();
+                                            if ($compte > 0) {
+                                                echo $compte.' exemplaire';
+                                                if ($compte > 1) {
+                                                    echo 's';
+                                                }
+                                            } else {
+                                                echo 'Aucun exemplaire';
+                                            }?></a></td>
+                                </tr>
         <?php
     }
 }
