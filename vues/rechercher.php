@@ -61,7 +61,7 @@ and open the template in the editor.
                                     </div>
                                 </div>
                             </div>
-
+                        </div>
                     </form>
                 </div>
                 <div>
@@ -100,9 +100,9 @@ if (ISSET($_REQUEST["motCle"])) {
                                     <td><?php echo $l->getTitre_livre(); ?></td>
                                     <td><?php echo $l->getDescription(); ?></td>
                                    <!-- <input name="action" value="evaluer" type="hidden" />-->
-                                    <td><a href="?action=evaluer&codeLivre=<?php echo $l->getIsbn(); ?>">★Evaluer</a></td>
-                                    <td><a href='?action=modifier&numAModifier=<?php echo $l->getIsbn(); ?>' class="pull-right hidden-xs showopacity glyphicon glyphicon-edit">Modifier</a></td>
-                                    <td><a href='?action=ajouterExp&numAjouter=<?php echo $l->getIsbn(); ?>'><span class="glyphicon glyphicon-plus-sign"></span>un exemplaire</a></td>
+                                    <td><a href="?action=evaluer&codeLivre=<?php echo $l->getIsbn(); ?>" data-toggle="tooltip" title="Evaluer" class="glyphicon glyphicon-star"></a></td>
+                                    <td><a href='?action=modifier&numAModifier=<?php echo $l->getIsbn(); ?>' data-toggle="tooltip" title="Modifier" class="pull-right hidden-xs showopacity glyphicon glyphicon-edit"></a></td>
+                                    <td><a href='?action=ajouterExp&numAjouter=<?php echo $l->getIsbn(); ?>' data-toggle="tooltip" title="Ajouter un exemplaire" class="glyphicon glyphicon-plus-sign"></a></td>
                                     <td><a href='?action=afficheExp&numLivre=<?php echo $l->getIsbn(); ?>'>
                                             <?php $dao = new ExemplaireDAO();
                                             $compte = $dao->find($l->getIsbn())->size();
@@ -131,5 +131,12 @@ include("footer.php");
 ?>
         </div>
     </div>
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
+
 </body>
 </html>
