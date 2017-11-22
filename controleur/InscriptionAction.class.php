@@ -23,6 +23,7 @@ class InscriptionAction implements Action {
             $p2 = $_REQUEST['confirmpassword'];
             $telephone = $_REQUEST['telephone'];
             $resultat = TRUE;
+            $cle_txt = fgets(fopen(Config::CHEMIN_CLE, 'r'));
 
             if ($email == "") {
                 $_REQUEST["messages"]["email"] = "Courriel obligatoire";
@@ -45,7 +46,7 @@ class InscriptionAction implements Action {
                 $resultat = FALSE;
             }
 
-            if ($cle != Config::DB_CLE) {
+            if ($cle != $cle_txt) {
                 $_REQUEST["messages"]["cle"] = "la cle saisi est incorrect";
                 $resultat = FALSE;
             }

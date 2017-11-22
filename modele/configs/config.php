@@ -6,6 +6,6 @@
 		const DB_USER = "root";
 		const DB_PWD = "root";
 		const DB_NAME = "bibliotheque";
-                const DB_CLE = "1234";
+        const CHEMIN_CLE = "modele/configs/cle.txt";
 	}
 ?>	
